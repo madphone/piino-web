@@ -94,6 +94,8 @@
     </a>
     <div class="nav-links">
       <a href="https://www.piino.de" class="nav-link">← Zurück</a>
+      <a href="#vergleich" class="nav-link">Vergleich</a>
+      <a href="#faq" class="nav-link">FAQ</a>
       <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary btn-sm">📱 APK DOWNLOAD</a>
     </div>
   </nav>
@@ -215,6 +217,122 @@
         <span class="spec-name">Export & Bericht-Funktion</span>
         <span class="spec-value">Wireshark .pcap & HTML "Bericht senden"</span>
       </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section id="vergleich" class="comparison-section">
+    <h2 class="section-title">📊 NODUS im Praxis-Check</h2>
+    <p class="section-subtitle">Auf einen Blick: Warum teure Spezialgeräte und Standard-Store-Apps ausgedient haben.</p>
+    
+    <div class="table-container">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature / Kriterium</th>
+            <th>Standard-Apps<br><span class="table-subtext">(Play Store)</span></th>
+            <th>Teure Hardware-Tester<br><span class="table-subtext">(200 € – 1.500 €)</span></th>
+            <th class="highlight-col">NODUS<br><span class="table-badge">Layer-2 Engine</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature-name">Benötigte Hardware</td>
+            <td>USB-LAN-Adapter</td>
+            <td>Proprietäres Spezial-Gerät / Dongle</td>
+            <td class="highlight-col"><strong>Handelsüblicher USB-C LAN-Adapter (~15 €)</strong></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Root-Rechte erforderlich?</td>
+            <td><span class="status-badge status-neutral">Nein</span></td>
+            <td><span class="status-badge status-neutral">Nein</span></td>
+            <td class="highlight-col"><span class="status-badge status-success">Nein</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Layer 2 Analyse (LLDP / CDP)</td>
+            <td><span class="status-icon">❌ <small>(Nur IP/L3)</small></span></td>
+            <td><span class="status-icon">✅</span></td>
+            <td class="highlight-col"><span class="status-icon">✅</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">VLAN-Erkennung (802.1Q)</td>
+            <td><span class="status-icon">❌</span></td>
+            <td><span class="status-icon">✅</span></td>
+            <td class="highlight-col"><span class="status-icon">✅</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Wireshark-PCAP-Mitschnitt</td>
+            <td><span class="status-icon">❌</span></td>
+            <td><span class="status-icon">✅ <small>(Teilweise)</small></span></td>
+            <td class="highlight-col"><span class="status-icon">✅</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Port-Blinker (Switch-LED)</td>
+            <td><span class="status-icon">❌</span></td>
+            <td><span class="status-icon">✅</span></td>
+            <td class="highlight-col"><span class="status-icon">✅</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">iPerf3 & PDF-Messberichte</td>
+            <td><span class="status-icon">Selten / Eingeschränkt</span></td>
+            <td><span class="status-icon">Oft Aufpreis / Extra-Software</span></td>
+            <td class="highlight-col"><strong>Integriert</strong></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Infrastruktur-Kosten</td>
+            <td>0 € – 10 €</td>
+            <td>200 € – 1.500 €+</td>
+            <td class="highlight-col"><strong>Nur App + günstiger Adapter</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <h2 class="section-title">❓ Häufig gestellte Fragen</h2>
+    
+    <div class="faq-container">
+      <details class="faq-item" open>
+        <summary class="faq-question">
+          <span>1. Wie unterscheidet sich NODUS von anderen Netzwerk-Apps im Store?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Standard-Apps aus dem Store arbeiten rein auf Layer 3 und 4 (IP-Adressen, Pings, einfache Portscans). Sie können keine Schicht-2-Informationen des Switches auslesen. NODUS geht eine Ebene tiefer: Du erhältst direkte Schicht-2-Informationen wie LLDP/CDP-Nachrichten, Trunk-VLAN-Tags und Paket-Mitschnitte (PCAP) – genau die Daten, für die man bisher teure Spezialhardware brauchte.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>2. Brauche ich ein gerootetes Smartphone oder teure Zusatz-Hardware?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Nein. NODUS funktioniert auf ganz normalen Android-Smartphones ohne Root-Zustand. Anstelle eines proprietären Hardware-Dongles für mehrere hundert Euro nutzt NODUS einen handelsüblichen USB-C-auf-Ethernet-Adapter.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>3. Welche USB-LAN-Adapter werden unterstützt?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>NODUS funktioniert mit praktisch allen handelsüblichen USB-C-auf-Gigabit-Ethernet-Adaptern, die überall im Handel erhältlich sind. Du benötigst keine teure Spezial-Hardware – ein ganz gewöhnlicher USB-LAN-Adapter genügt.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>4. Ersetzt NODUS mein teures Profi-Messgerät im Arbeitsalltag?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Für 90 % der täglichen Aufgaben im Service, bei der Fehlersuche und der Inbetriebnahme (Welcher Switch-Port ist das? Welches VLAN liegt an? Läuft DHCP? Passt der Durchsatz via iPerf3?): Ja. Du hast dein Testwerkzeug ab sofort immer in der Hosentasche, ohne schwere Gerätekoffer oder leere Spezial-Akkus.</p>
+        </div>
+      </details>
     </div>
   </section>
 

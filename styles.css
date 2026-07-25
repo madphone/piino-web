@@ -358,6 +358,197 @@ html, body {
   max-width: 100vw;
 }
 
+/* Comparison Section */
+.comparison-section {
+  padding: 80px 8% 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  margin-top: -35px;
+  margin-bottom: 50px;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 700px;
+}
+
+.comparison-table th, 
+.comparison-table td {
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.comparison-table th {
+  background: #11171D;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-subtext {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  margin-top: 4px;
+}
+
+.table-badge {
+  display: inline-block;
+  background: var(--piino-red);
+  color: var(--text-white);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 800;
+  margin-top: 4px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.feature-name {
+  font-weight: 700;
+  color: var(--text-white);
+  width: 32%;
+}
+
+.highlight-col {
+  background: rgba(230, 0, 18, 0.08);
+  border-left: 1px solid rgba(230, 0, 18, 0.3);
+  border-right: 1px solid rgba(230, 0, 18, 0.3);
+}
+
+.comparison-table th.highlight-col {
+  background: rgba(230, 0, 18, 0.2);
+  color: #FF4D5E;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.status-success {
+  background: rgba(0, 230, 118, 0.15);
+  color: var(--accent-green);
+  border: 1px solid rgba(0, 230, 118, 0.3);
+}
+
+.status-neutral {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-gray);
+}
+
+.status-icon {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.status-icon small {
+  color: var(--text-gray);
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 8% 80px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.faq-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: rgba(0, 176, 255, 0.4);
+}
+
+.faq-item[open] {
+  border-color: var(--piino-red);
+  box-shadow: 0 4px 20px rgba(230, 0, 18, 0.1);
+}
+
+.faq-question {
+  padding: 22px 26px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  transition: transform 0.3s ease;
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+  color: var(--piino-red);
+}
+
+.faq-answer {
+  padding: 0 26px 22px;
+  color: var(--text-gray);
+  font-size: 1rem;
+  line-height: 1.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  margin-top: 4px;
+  padding-top: 16px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 12px 4%;
@@ -388,7 +579,7 @@ html, body {
   .hero p {
     font-size: 1rem;
   }
-  .features {
+  .features, .comparison-section, .faq-section {
     padding: 40px 4%;
   }
   .grid, .feature-detail-grid {
@@ -404,5 +595,19 @@ html, body {
   .spec-item {
     flex-direction: column;
     gap: 4px;
+  }
+  .comparison-table th, 
+  .comparison-table td {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+  }
+  .faq-question {
+    padding: 16px 18px;
+    font-size: 1rem;
+  }
+  .faq-answer {
+    padding: 0 18px 18px;
+    padding-top: 12px;
+    font-size: 0.92rem;
   }
 }
