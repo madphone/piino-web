@@ -238,9 +238,29 @@ body {
   margin-left: 6px;
 }
 
-.card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
+.card-icon-svg {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.card-icon-svg svg {
+  width: 28px;
+  height: 28px;
+}
+
+.card:hover .card-icon-svg {
+  background: rgba(230, 0, 18, 0.12);
+  border-color: rgba(230, 0, 18, 0.4);
+  transform: scale(1.06);
+  box-shadow: 0 4px 20px rgba(230, 0, 18, 0.25);
 }
 
 .card h3 {
