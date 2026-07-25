@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piino - Smart Hardware & Software Tools</title>
-  <meta name="description" content="Piino ist die Heimat innovativer Netzwerk- und Software-Tools für IT-Techniker und Admins. Entdecke Nodus, den mobilen USB-C Netzwerktester.">
+  <title>Piino Studio - Software & Digitale Lösungen</title>
+  <meta name="description" content="Piino Studio entwickelt innovative Softwarelösungen: Nodus Netzwerktester, Wegweiser, TabSign und digitale Plattformen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
@@ -15,72 +15,111 @@
   <!-- Navbar -->
   <nav class="navbar">
     <a href="#" class="nav-brand">
-      <img src="piino-logo.png" alt="Piino Logo" class="nav-logo">
+      <img src="piino-logo-legal.svg" alt="Piino Studio Logo" class="nav-logo-svg">
     </a>
-    <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary">NODUS APP GETTEN</a>
+    <div class="nav-links">
+      <a href="#projekte" class="nav-link">Projekte</a>
+      <a href="#impressum" class="nav-link">Impressum</a>
+      <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary">NODUS APK</a>
+    </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="badge-nintendo">🔴 PIINO HARDWARE & SOFTWARE</div>
-    <h1>Erstmals professionelle Netzwerkanalyse auf deinem Smartphone.</h1>
-    <p>Wir entwickeln hochpräzise, intuitive Tools für IT-Systemelektroniker, Netzwerker und Administratoren. Schnell, transparent und ohne teure Spezial-Hardware.</p>
+    <div class="badge-nintendo">🔴 PIINO SOFTWARE STUDIO</div>
+    <h1>Durchdachte Software & Digitale Systeme.</h1>
+    <p>Von professionellen Netzwerk-Messwerkzeugen bis hin zu digitalen Leitsystemen und Smart-City-Plattformen. Entwicklung mit Präzision und klarem Fokus auf Usability.</p>
     
     <div class="hero-actions">
-      <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary">🚀 Nodus v2.0.0-PRO Download (.apk)</a>
-      <a href="#nodus" class="btn-secondary">📖 Feature-Übersicht</a>
+      <a href="#projekte" class="btn-primary">🚀 Projekt-Portfolio entdecken</a>
+      <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-secondary">📱 Nodus App Download</a>
     </div>
   </section>
 
-  <!-- Product Showcase: Nodus -->
-  <section id="nodus" class="features">
-    <h2 class="section-title">⚡ Das Nodus Ökosystem</h2>
+  <!-- Projects Showcase Section -->
+  <section id="projekte" class="features">
+    <h2 class="section-title">🛠️ Entwickelte Projekte & Produkte</h2>
     
     <div class="grid">
-      <div class="card">
+      <!-- Nodus (Flagship) -->
+      <div class="card card-featured">
+        <div class="card-badge">FLAGSHIP APP</div>
         <div class="card-icon">🔌</div>
-        <h3>USB-C L2 Frame Driver</h3>
-        <p>Erfasst rohe Ethernet-Pakete (LLDP, CDP, DHCP, VLAN Tags) direkt über deinen USB-C OTG Netzwerkadapter ohne Root-Rechte.</p>
+        <h3>Nodus Network Tester</h3>
+        <p>Der mobile USB-C Layer-2 Netzwerktester für Android. Analysiert LLDP/CDP Switche, führt Traffic-Burst LED-Blinken durch, misst iPerf3 Durchsatz und exportiert Wireshark PCAPs & PDF-Berichte.</p>
+        <div class="card-actions">
+          <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary btn-sm">APK v2.0.0-PRO</a>
+          <a href="https://nodus.piino.de" target="_blank" class="btn-secondary btn-sm">nodus.piino.de ↗</a>
+        </div>
       </div>
 
+      <!-- Wegweiser -->
       <div class="card">
-        <div class="card-icon">⚡</div>
-        <h3>Traffic-Burst Port Blinker</h3>
-        <p>Bringt die Aktivitäts-LED am Switch-Port hochfrequent zum Blinken – für sekundenschnelles Zuordnen in vollbelegten Patchfeldern.</p>
+        <div class="card-icon">🧭</div>
+        <h3>Wegweiser</h3>
+        <p>Interaktives Leitsystem für barrierefreie Orientierung in öffentlichen Gebäuden und städtischen Einrichtungen. Entwickelt für moderne Touch-Terminals und mobile Endgeräte.</p>
+        <div class="card-tag">Stadt Ludwigsburg</div>
       </div>
 
+      <!-- TabSign -->
       <div class="card">
-        <div class="card-icon">🦈</div>
-        <h3>Wireshark PCAP Recorder</h3>
-        <p>Zeichnet Datenpakete im echten Libpcap-Format (.pcap) auf und ermöglicht den direkten Teilen-Export an deinen PC für Wireshark.</p>
+        <div class="card-icon">🖥️</div>
+        <h3>TabSign</h3>
+        <p>Intelligente Digital-Signage und Raum-Beschilderungslösung. Dynamische Belegungsanzeige, Schnittstellenanbindung und zentral verwaltete Raumbeschilderung.</p>
+        <div class="card-tag">Digital Signage</div>
       </div>
 
+      <!-- Liquid Blocks Hub -->
       <div class="card">
-        <div class="card-icon">📊</div>
-        <h3>PDF-Messbericht Export</h3>
-        <p>Generiert rechtssichere PDF-Messberichte mit Switch-Namen, Port-ID, VLAN-Verteilung und Latenz-Statistiken auf Knopfdruck.</p>
+        <div class="card-icon">🧩</div>
+        <h3>Liquid Blocks Hub</h3>
+        <p>Modulare Daten- und Asset-Plattform für flexibles Content-Management, Komponenten-Orchestrierung und strukturierte Schnittstellenverarbeitung.</p>
+        <div class="card-tag">Platform & Data</div>
       </div>
 
+      <!-- Rebokeh (WIP) -->
       <div class="card">
-        <div class="card-icon">⏱️</div>
-        <h3>iPerf3 Throughput Test</h3>
-        <p>Führt Echte-Zeit Mbit/s Durchsatzmessungen zu jedem iPerf3-Server im Netzwerk auf Port 5201 durch.</p>
+        <div class="card-icon">📸</div>
+        <h3>Rebokeh <span class="wip-badge">WIP</span></h3>
+        <p>Computational Photography & Bokeh Processing Tool. Algorithmen zur präzisen Schärfentiefe-Manipulation und fotorealistischen Linsen-Emulation.</p>
+        <div class="card-tag">In Entwicklung</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal Impressum & Privacy Section -->
+  <section id="impressum" class="impressum-section">
+    <div class="impressum-container">
+      <h2>📄 Impressum & Rechtliche Angaben</h2>
+      <p class="impressum-subtitle">Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)</p>
+
+      <div class="impressum-grid">
+        <div class="impressum-block">
+          <h4>Diensteanbieter</h4>
+          <p><strong>Giuseppe Madeo</strong><br>
+          Piino Studio / Softwareentwicklung<br>
+          Ludwigsburg, Deutschland</p>
+        </div>
+
+        <div class="impressum-block">
+          <h4>Kontakt & Anfragen</h4>
+          <p>E-Mail: <a href="mailto:info@piino.de">info@piino.de</a><br>
+          Website: <a href="https://www.piino.de">www.piino.de</a></p>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="card-icon">🎯</div>
-        <h3>TCP Port Tracker</h3>
-        <p>Überprüft die Erreichbarkeit und Latenz kritischer Infrastruktur-Ports (HTTP 80, HTTPS 443, DNS 53).</p>
+      <div class="impressum-legal-text">
+        <h4>Haftungsausschluss (Disclaimer)</h4>
+        <p><strong>Haftung für Inhalte:</strong> Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+        <p><strong>Urheberrecht:</strong> Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Alle eingetragenen Warenzeichen und Markennamen (z.B. Erwähnungen von Stadt-Projekten) gehören ihren jeweiligen Eigentümern.</p>
+        <p><strong>Datenschutz (DSGVO):</strong> Diese Website nutzt keine Tracking-Cookies und speichert keine personenbezogenen Daten der Besucher. Die Nutzung erfolgt anonym über Cloudflare Pages CDN.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Piino.de – Entwickelt mit Präzision und Leidenschaft.</p>
-    <p style="margin-top: 10px;">
-      <a href="#">Impressum</a> &bull; <a href="#">Datenschutz</a> &bull; <a href="https://github.com/madphone/nodus" target="_blank">GitHub Repository</a>
-    </p>
+    <p>&copy; 2026 Piino Studio – Giuseppe Madeo &bull; Alle Rechte vorbehalten.</p>
   </footer>
 
 </body>
