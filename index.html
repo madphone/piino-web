@@ -123,18 +123,9 @@
   </footer>
 
   <script>
-    // Subdomain routing: If entered via nodus.piino.de, scroll directly to Nodus Flagship app
+    // Subdomain routing: If entered via nodus.piino.de, load dedicated Nodus Landing Page nodus.html
     if (window.location.hostname.startsWith('nodus.')) {
-      document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-          const nodusCard = document.querySelector('.card-featured');
-          if (nodusCard) {
-            nodusCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            nodusCard.style.boxShadow = '0 0 50px rgba(230, 0, 18, 0.85)';
-            nodusCard.style.borderColor = '#FFFFFF';
-          }
-        }, 100);
-      });
+      window.location.replace('nodus.html');
     }
   </script>
 </body>

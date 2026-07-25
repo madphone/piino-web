@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodus Network Tester - Der mobile USB-C Layer-2 Netzwerktester für Android</title>
+  <meta name="description" content="Nodus verwandelt dein Android-Smartphone in einen professionellen Layer-2 Netzwerktester. LLDP/CDP Switch-Analyse, Port-Blinker, iPerf3 und PCAP Export ohne Root.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .nodus-hero {
+      padding: 100px 8% 60px;
+      text-align: center;
+      background: radial-gradient(circle at top center, rgba(230, 0, 18, 0.15) 0%, rgba(11, 15, 18, 0) 70%);
+    }
+    .nodus-hero h1 {
+      font-size: 3.8rem;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+    .nodus-hero p {
+      font-size: 1.3rem;
+      color: var(--text-gray);
+      max-width: 760px;
+      margin: 0 auto 40px;
+    }
+    .feature-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .detail-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px;
+      transition: all 0.2s ease;
+    }
+    .detail-card:hover {
+      border-color: var(--piino-red);
+      transform: translateY(-4px);
+    }
+    .detail-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .detail-card h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--text-white);
+    }
+    .detail-card p {
+      color: var(--text-gray);
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+    .tech-specs {
+      background: #0E1317;
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 40px;
+      margin-top: 60px;
+    }
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .spec-item:last-child {
+      border-bottom: none;
+    }
+    .spec-name {
+      color: var(--text-gray);
+      font-weight: 600;
+    }
+    .spec-value {
+      color: var(--accent-cyan);
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="https://www.piino.de" class="nav-brand">
+      <img src="piino-logo-legal.svg" alt="Piino Studio Logo" class="nav-logo-svg">
+    </a>
+    <div class="nav-links">
+      <a href="https://www.piino.de" class="nav-link">← Zurück zu Piino.de</a>
+      <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary">📱 APK v2.0.0-PRO GETTEN</a>
+    </div>
+  </nav>
+
+  <!-- Nodus Hero -->
+  <section class="nodus-hero">
+    <div class="badge-nintendo">🔌 NODUS NETWORK TESTER v2.0.0-PRO</div>
+    <h1>Profis Netzwerkanalyse. Direkt auf deinem Android Smartphone.</h1>
+    <p>Keine unhandlichen Spezialgeräte für Tausende Euro mehr. Nodus verbindet deinen USB-C OTG Netzwerkadapter direkt mit dem Switch und analysiert Layer-2 Pakete in Echtzeit.</p>
+    
+    <div class="hero-actions">
+      <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary">🚀 Nodus v2.0.0-PRO APK Herunterladen (24 MB)</a>
+      <a href="#features" class="btn-secondary">⚡ Funktionen entdecken</a>
+    </div>
+  </section>
+
+  <!-- Deep Feature Breakdown -->
+  <section id="features" class="features">
+    <h2 class="section-title">🛠️ Leistungsstarke Funktionen im Überblick</h2>
+    
+    <div class="feature-detail-grid">
+      <!-- Feature 1: Raw L2 Driver -->
+      <div class="detail-card">
+        <div class="detail-icon">🔌</div>
+        <h3>USB-C L2 Ethernet Driver</h3>
+        <p>Eigener geräteloser Android-Netzwerktreiber ohne Root. Erfasst rohe Layer-2 Frames (LLDP, CDP, DHCP, 802.1Q VLAN Tags) direkt über den USB-C Port mit maximaler Performance.</p>
+      </div>
+
+      <!-- Feature 2: Port Blinker -->
+      <div class="detail-card">
+        <div class="detail-icon">💡</div>
+        <h3>Switch Port Blinker Engine</h3>
+        <p>Erzeugt konfigurierbare Traffic-Burst Paket-Salven zur physischen Identifikation von Switch-Ports im Serverraum. Lässt die Port-LED am Switch im Wunschtakt blinken.</p>
+      </div>
+
+      <!-- Feature 3: LLDP / CDP Discovery -->
+      <div class="detail-card">
+        <div class="detail-icon">🔍</div>
+        <h3>Switch & VLAN Dekodierung</h3>
+        <p>Zeigt sofort Switch-Name, Port-ID, VLAN-ID, Management IP, Duplex-Modus und Capabilities des angeschlossenen Netzwerk-Switches an.</p>
+      </div>
+
+      <!-- Feature 4: iPerf3 & Diagnostics -->
+      <div class="detail-card">
+        <div class="detail-icon">⚡</div>
+        <h3>iPerf3 & Speed Diagnostics</h3>
+        <p>Integrierter iPerf3 Client für Durchsatzmessungen (TCP/UDP), Latenz-Analysen, Ping, DNS-Auflösung, Subnet Scanner und TCP Port Scanner.</p>
+      </div>
+
+      <!-- Feature 5: Wireshark PCAPs -->
+      <div class="detail-card">
+        <div class="detail-icon">🦈</div>
+        <h3>Wireshark PCAP Capture</h3>
+        <p>Zeichnet den eingehenden Datenverkehr im nativen Wireshark PCAP-Format auf. Perfekt für spätere Tiefenanalysen und Paket-Exporte.</p>
+      </div>
+
+      <!-- Feature 6: PDF Reports -->
+      <div class="detail-card">
+        <div class="detail-icon">📄</div>
+        <h3>PDF Protokoll Exporter</h3>
+        <p>Generiert mit einem Klick saubere, dokumentenechte PDF-Prüfprotokolle mit Standorteingabe, Messdaten und Prüfer-Signatur für Kunden & Dokumentation.</p>
+      </div>
+    </div>
+
+    <!-- Technical Specifications -->
+    <div class="tech-specs">
+      <h3 style="font-size: 1.6rem; margin-bottom: 20px; font-weight: 800;">⚙️ Technische Spezifikationen</h3>
+      
+      <div class="spec-item">
+        <span class="spec-name">Plattform & Betriebssystem</span>
+        <span class="spec-value">Android 8.0+ (API 26+)</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-name">Hardware-Anforderung</span>
+        <span class="spec-value">USB-C OTG Netzwerkadapter (Gigabit)</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-name">Root-Rechte erforderlich?</span>
+        <span class="spec-value">NEIN (Eigener USB Frame-Driver)</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-name">Unterstützte L2 Protokolle</span>
+        <span class="spec-value">LLDP, CDP, 802.1Q VLAN, DHCP, ARP</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-name">Export-Formate</span>
+        <span class="spec-value">Wireshark .pcap & PDF-Messprotokoll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Footer CTA -->
+  <section style="text-align: center; padding: 60px 8%; background: #0E1317; border-top: 1px solid var(--card-border);">
+    <h2 style="font-size: 2.2rem; font-weight: 900; margin-bottom: 16px;">Jetzt Nodus v2.0.0-PRO testen</h2>
+    <p style="color: var(--text-gray); margin-bottom: 30px;">Lade die App direkt auf dein Android-Smartphone und starte deine Netzwerkanalyse.</p>
+    <a href="downloads/Nodus-v2.0.0-PRO.apk" download class="btn-primary" style="font-size: 1.1rem; padding: 14px 32px;">📱 Nodus v2.0.0-PRO APK Herunterladen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Piino Studio – Nodus Network Tester &bull; <a href="https://www.piino.de#impressum" style="color: var(--accent-cyan); text-decoration: none;">Impressum</a></p>
+  </footer>
+
+</body>
+</html>
