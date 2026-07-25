@@ -47,7 +47,16 @@ body {
 }
 
 .nav-logo {
-  height: 42px;
+  height: 52px;
+  width: auto;
+  border-radius: 26px;
+  box-shadow: 0 4px 15px rgba(230, 0, 18, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(230, 0, 18, 0.5);
 }
 
 .btn-primary {
