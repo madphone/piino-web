@@ -1,0 +1,7 @@
+{
+  "versionCode": 27,
+  "versionName": "2.6.0-PRO",
+  "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
+  "releaseNotes": "Neuer TCP Port Tracker, Gemini Nano Status-Icon, PCAP Mitschnitt Korrektur, automatisches In-App Web-Update System und Performance-Verbesserungen.",
+  "minSupportedVersionCode": 20
+}
