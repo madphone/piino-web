@@ -1,7 +1,7 @@
 {
-  "versionCode": 28,
-  "versionName": "2.7.0-PRO",
+  "versionCode": 29,
+  "versionName": "2.8.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "Neuer mDNS & Bonjour Multicast Filter-Test (UDP 5353 für AppleTV/AirPlay/WLAN/VLAN), automatische IGMP-Snooping Diagnose, in-app Update System & Bugfixes.",
+  "releaseNotes": "Glasklares AirPlay & mDNS Ergebnisse-Banner (✅ KEINE FILTERUNG — AirPlay funktioniert / ❌ MULTICAST BLOCKIERT), High-Contrast M3 Karten & Häkchen-Tags.",
   "minSupportedVersionCode": 20
 }
