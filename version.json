@@ -1,7 +1,7 @@
 {
-  "versionCode": 27,
-  "versionName": "2.6.0-PRO",
+  "versionCode": 28,
+  "versionName": "2.7.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "Neuer TCP Port Tracker, Gemini Nano Status-Icon, PCAP Mitschnitt Korrektur, automatisches In-App Web-Update System und Performance-Verbesserungen.",
+  "releaseNotes": "Neuer mDNS & Bonjour Multicast Filter-Test (UDP 5353 für AppleTV/AirPlay/WLAN/VLAN), automatische IGMP-Snooping Diagnose, in-app Update System & Bugfixes.",
   "minSupportedVersionCode": 20
 }
