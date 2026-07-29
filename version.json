@@ -2,6 +2,7 @@
   "versionCode": 29,
   "versionName": "2.8.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "Glasklares AirPlay & mDNS Ergebnisse-Banner (✅ KEINE FILTERUNG — AirPlay funktioniert / ❌ MULTICAST BLOCKIERT), High-Contrast M3 Karten & Häkchen-Tags.",
+  "releaseNotes": "In-App Kauf (Google Play Billing) & 3-Tage-Trial Paywall, neues Android Adaptive App-Icon, 100% Offline Gemini Nano KI-Copilot, mDNS Filter-Diagnose, iPerf3 & PCAP-Recording.",
   "minSupportedVersionCode": 20
 }
+
