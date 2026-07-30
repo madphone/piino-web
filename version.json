@@ -1,8 +1,9 @@
 {
-  "versionCode": 29,
-  "versionName": "2.8.0-PRO",
+  "versionCode": 30,
+  "versionName": "2.8.1-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "In-App Kauf (Google Play Billing) & 3-Tage-Trial Paywall, neues Android Adaptive App-Icon, 100% Offline Gemini Nano KI-Copilot, mDNS Filter-Diagnose, iPerf3 & PCAP-Recording.",
+  "releaseNotes": "Nodus v2.8.1: Vorbereitung für In-App-Kauf & Bezahlen über Google Play Store (Google Play Billing 7.0 SDK, Paywall & 3-Tage-Trial), neues Android Adaptive App-Icon, On-Device Gemini Nano KI.",
   "minSupportedVersionCode": 20
 }
+
 
