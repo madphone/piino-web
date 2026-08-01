@@ -1,7 +1,7 @@
 {
-  "versionCode": 57,
+  "versionCode": 58,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Update: User Feedback & USB-Hardware-Diagnose System, automatisches Treiberkompatibilitäts-Reporting, Google Play Billing v8.0.0 Integration.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Update: Neues Welcome-Onboarding, interaktiver Netzwerk-Kompass (Academy), User Feedback & USB-Hardware-Diagnose System.",
   "minSupportedVersionCode": 30
 }
