@@ -1,7 +1,7 @@
 {
-  "versionCode": 66,
+  "versionCode": 67,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc66): Fixed Netzwerk-Kompass horizontal chip scrolling, added circular (i) Info Guide button next to scan status.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc67): Removed internal driver mentions, replaced idle BEREIT badges with interactive tool-specific Info badges.",
   "minSupportedVersionCode": 30
 }
