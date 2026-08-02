@@ -1,0 +1,12 @@
+# Enable PHP execution and set MIME types
+AddType application/x-httpd-php .php
+AddHandler application/x-httpd-php .php
+
+<IfModule mod_headers.c>
+    # Prevent caching for API responses
+    <FilesMatch "\.(php|json)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>

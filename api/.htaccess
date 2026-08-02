@@ -1,0 +1,9 @@
+# Enable PHP Handler for API folder
+AddType application/x-httpd-php .php
+AddHandler application/x-httpd-php .php
+
+# Protect SQLite Databases from direct HTTP access
+<FilesMatch "\.sqlite$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
