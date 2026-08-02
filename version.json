@@ -1,7 +1,7 @@
 {
-  "versionCode": 58,
+  "versionCode": 59,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Update: Neues Welcome-Onboarding, interaktiver Netzwerk-Kompass (Academy), User Feedback & USB-Hardware-Diagnose System.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Update: Google Drive Cloud Backup OAuth-Fix, Welcome-Onboarding, Netzwerk-Kompass (Academy), User Feedback & USB-Diagnose System.",
   "minSupportedVersionCode": 30
 }
