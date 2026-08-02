@@ -1,7 +1,7 @@
 {
-  "versionCode": 60,
+  "versionCode": 61,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release: Google Drive OAuth Sync, VLAN-Suchleiste & 63+ List-Fix, Welcome-Onboarding & Network-Kompass.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release: Google Play Closed Beta Build (vc61), Google Drive Cloud Sync, VLAN-Suchleiste & Onboarding.",
   "minSupportedVersionCode": 30
 }
