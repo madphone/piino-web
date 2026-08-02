@@ -1,7 +1,7 @@
 {
-  "versionCode": 61,
+  "versionCode": 62,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release: Google Play Closed Beta Build (vc61), Google Drive Cloud Sync, VLAN-Suchleiste & Onboarding.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release: Feedback IME Soft-Keyboard Inset Fix, Email Intent Fallback (an mad+nodusfeedback@piino.de) & Google Play Closed Beta vc62.",
   "minSupportedVersionCode": 30
 }
