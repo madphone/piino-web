@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodus Pro • Live Tester & Dashboard Stats</title>
+    <style>
+        :root {
+            --bg-color: #0D1317;
+            --card-bg: #161E24;
+            --border-color: #242E36;
+            --accent-cyan: #00B0FF;
+            --accent-green: #34D399;
+            --text-main: #F1F5F9;
+            --text-muted: #94A3B8;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge-pro {
+            background: rgba(0, 176, 255, 0.15);
+            color: var(--accent-cyan);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid rgba(0, 176, 255, 0.3);
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .metric-card .title {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .metric-card .value {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 8px;
+            color: #FFF;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+        th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 13px;
+        }
+        th {
+            background: #11181E;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background: rgba(255,255,255,0.02);
+        }
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+        .dot-green { background: #34D399; box-shadow: 0 0 8px #34D399; }
+        .dot-yellow { background: #FBBF24; }
+        .dot-gray { background: #64748B; }
+        .code-box {
+            font-family: monospace;
+            background: #0F172A;
+            padding: 4px 8px;
+            border-radius: 6px;
+            color: #38BDF8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📡 Nodus Pro <span class="badge-pro">CLOUDFLARE DASHBOARD</span></h1>
+            <div style="color: var(--text-muted); font-size: 13px;">Version: 3.0.0-PRO (vc60)</div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="title">Aktiver Status</div>
+                <div class="value" style="color: var(--accent-cyan);">Google Play Closed Beta</div>
+            </div>
+            <div class="metric-card">
+                <div class="title">Plattform</div>
+                <div class="value" style="color: var(--accent-green);">Cloudflare / GitHub Pages</div>
+            </div>
+            <div class="metric-card">
+                <div class="title">Build Release</div>
+                <div class="value" style="color: #A855F7;">Version Code 60</div>
+            </div>
+        </div>
+
+        <div class="section-title">📊 Closed Beta & Distribution Status</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Komponente</th>
+                    <th>Ziel / URL</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Google Play Closed Beta</strong></td>
+                    <td><span class="code-box">https://play.google.com/apps/testing/de.piino.nodus</span></td>
+                    <td><span class="status-dot dot-green"></span> Bereit für Tester</td>
+                    <td>14-Tage-Testlauf (AAB vc60)</td>
+                </tr>
+                <tr>
+                    <td><strong>Cloud Backup Sync</strong></td>
+                    <td><span class="code-box">Google Drive AppData API</span></td>
+                    <td><span class="status-dot dot-green"></span> OAuth 2.0 Aktiv</td>
+                    <td>Signiert mit SHA-1 Fingerabdruck</td>
+                </tr>
+                <tr>
+                    <td><strong>Direkt-Download (Web)</strong></td>
+                    <td><span class="code-box">https://nodus.piino.de/downloads/Nodus_latest.apk</span></td>
+                    <td><span class="status-dot dot-green"></span> Live auf Cloudflare</td>
+                    <td>v3.0.0-PRO (vc60)</td>
+                </tr>
+                <tr>
+                    <td><strong>Offline KI-Copilot</strong></td>
+                    <td><span class="code-box">Gemini Nano (Local On-Device)</span></td>
+                    <td><span class="status-dot dot-green"></span> 100% Offline</td>
+                    <td>Vollständig integriert</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
