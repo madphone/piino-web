@@ -1,7 +1,7 @@
 {
-  "versionCode": 65,
+  "versionCode": 66,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc65): Direct Google Drive Cloud Sync REST API (upload/restore), moved Backup to 3-dots top menu & VLAN detail view fixes.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc66): Fixed Netzwerk-Kompass horizontal chip scrolling, added circular (i) Info Guide button next to scan status.",
   "minSupportedVersionCode": 30
 }
