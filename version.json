@@ -1,7 +1,7 @@
 {
-  "versionCode": 69,
+  "versionCode": 70,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc69): Updated iPerf3 report button text to concise 'iPerf3 Messbericht teilen'.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc70): Fixed productFlavors versionName to 3.0.0-PRO across all build targets.",
   "minSupportedVersionCode": 30
 }
