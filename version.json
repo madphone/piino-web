@@ -1,7 +1,7 @@
 {
-  "versionCode": 63,
+  "versionCode": 64,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release: Fixed Smart CSV Import parser, auto-refresh state triggers, Toast notifications & versionCode 63.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc64): Fixed missing layout else branch for VLAN detail view, 1-tap active profile selection & smart CSV import parser.",
   "minSupportedVersionCode": 30
 }
