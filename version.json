@@ -1,7 +1,7 @@
 {
-  "versionCode": 68,
+  "versionCode": 69,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc68): Added iPerf3 Performance Report export (PDF/HTML share) and dynamic report titles for WLAN/FRITZ!Box networks.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc69): Updated iPerf3 report button text to concise 'iPerf3 Messbericht teilen'.",
   "minSupportedVersionCode": 30
 }
