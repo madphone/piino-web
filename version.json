@@ -1,7 +1,7 @@
 {
-  "versionCode": 67,
+  "versionCode": 68,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc67): Removed internal driver mentions, replaced idle BEREIT badges with interactive tool-specific Info badges.",
+  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc68): Added iPerf3 Performance Report export (PDF/HTML share) and dynamic report titles for WLAN/FRITZ!Box networks.",
   "minSupportedVersionCode": 30
 }
