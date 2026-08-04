@@ -1,7 +1,7 @@
 {
-  "versionCode": 70,
+  "versionCode": 71,
   "versionName": "3.0.0-PRO",
   "apkUrl": "https://nodus.piino.de/downloads/Nodus_latest.apk",
-  "releaseNotes": "🚀 Nodus v3.0.0-PRO Release (vc70): Fixed productFlavors versionName to 3.0.0-PRO across all build targets.",
+  "releaseNotes": "🐛 Nodus v3.0.0-PRO Hotfix (vc71): Fixed critical StackOverflowError crash in SwitchManager caused by infinite recursion during LLDP auto-enrichment.",
   "minSupportedVersionCode": 30
 }
